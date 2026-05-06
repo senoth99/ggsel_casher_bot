@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #020606;
+  --foreground: #cffff0;
 }
 
 @theme inline {
@@ -12,15 +12,83 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.scanline-overlay {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(145, 255, 186, 0.08) 0,
+    rgba(145, 255, 186, 0.08) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+.cyber-vignette {
+  background:
+    radial-gradient(circle at 50% 45%, transparent 34%, rgba(0, 0, 0, 0.28) 72%),
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.62) 100%);
+}
+
+.logo-float {
+  animation: logo-float 3.2s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(136, 255, 172, 0.22));
+}
+
+@keyframes logo-float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.03);
+  }
+}
+
+.soft-float {
+  animation: soft-float 5s ease-in-out infinite;
+}
+
+.soft-float-delayed {
+  animation: soft-float 6.4s ease-in-out 0.8s infinite;
+}
+
+.ascii-title {
+  text-shadow: 0 0 10px rgba(124, 255, 167, 0.25);
+}
+
+.console-loader {
+  animation: console-loader 1s steps(2, end) infinite;
+}
+
+.console-loader-delay {
+  animation: console-loader 1s steps(2, end) 0.22s infinite;
+}
+
+.console-loader-delay-2 {
+  animation: console-loader 1s steps(2, end) 0.44s infinite;
+}
+
+@keyframes console-loader {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes soft-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
 }
