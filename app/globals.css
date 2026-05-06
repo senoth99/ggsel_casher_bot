@@ -73,6 +73,29 @@ body {
   animation: console-loader 1s steps(2, end) 0.44s infinite;
 }
 
+.boot-grid {
+  background-image:
+    linear-gradient(rgba(111, 255, 184, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111, 255, 184, 0.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.boot-line {
+  animation: console-loader 0.9s steps(2, end) infinite;
+}
+
+.boot-line-delay {
+  animation: console-loader 0.9s steps(2, end) 0.16s infinite;
+}
+
+.boot-line-delay-2 {
+  animation: console-loader 0.9s steps(2, end) 0.32s infinite;
+}
+
+.boot-line-delay-3 {
+  animation: console-loader 0.9s steps(2, end) 0.48s infinite;
+}
+
 @keyframes console-loader {
   0%,
   100% {

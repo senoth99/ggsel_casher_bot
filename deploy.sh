@@ -19,4 +19,4 @@ echo "Building production bundle..."
 pnpm build
 
 echo "Starting Next.js on ${HOST}:${PORT}..."
-exec pnpm start -- --hostname "$HOST" --port "$PORT"
+exec pnpm exec next start --hostname "$HOST" --port "$PORT"
