@@ -134,3 +134,18 @@ body {
     transform: translateY(-7px);
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-float,
+  .soft-float,
+  .soft-float-delayed,
+  .console-loader,
+  .console-loader-delay,
+  .console-loader-delay-2,
+  .boot-line,
+  .boot-line-delay,
+  .boot-line-delay-2,
+  .boot-line-delay-3 {
+    animation: none !important;
+  }
+}

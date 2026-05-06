@@ -95,20 +95,19 @@ export default function Home() {
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#010404] px-4 py-10 font-mono">
       <div className="pointer-events-none absolute inset-0 -z-30 bg-[radial-gradient(circle_at_16%_22%,rgba(111,255,184,0.2)_0%,transparent_38%),radial-gradient(circle_at_82%_20%,rgba(111,255,184,0.14)_0%,transparent_36%),radial-gradient(circle_at_50%_110%,rgba(111,255,184,0.16)_0%,transparent_45%),linear-gradient(165deg,#030706_0%,#020b0b_45%,#020606_100%)]" />
       <div className="cyber-vignette pointer-events-none absolute inset-0 -z-20" />
-      <div className="pointer-events-none absolute inset-0 -z-10 opacity-[0.18]">
+      <div className="pointer-events-none absolute inset-0 -z-10 opacity-[0.1]">
         <Image
           src="/visual-effects.png"
           alt=""
           fill
           className="object-cover object-top"
-          unoptimized
           priority
         />
       </div>
-      <div className="pointer-events-none absolute -left-24 top-20 h-72 w-72 rounded-full bg-emerald-400/16 blur-[120px]" />
-      <div className="pointer-events-none absolute -right-24 top-1/3 h-80 w-80 rounded-full bg-emerald-400/12 blur-[140px]" />
-      <div className="pointer-events-none absolute -left-20 bottom-6 h-64 w-64 rounded-full bg-emerald-400/10 blur-[130px]" />
-      <div className="scanline-overlay pointer-events-none absolute inset-0 opacity-25" />
+      <div className="pointer-events-none absolute -left-24 top-20 hidden h-72 w-72 rounded-full bg-emerald-400/12 blur-[70px] lg:block" />
+      <div className="pointer-events-none absolute -right-24 top-1/3 hidden h-80 w-80 rounded-full bg-emerald-400/10 blur-[84px] lg:block" />
+      <div className="pointer-events-none absolute -left-20 bottom-6 hidden h-64 w-64 rounded-full bg-emerald-400/8 blur-[78px] xl:block" />
+      <div className="scanline-overlay pointer-events-none absolute inset-0 opacity-15" />
       <pre className="pointer-events-none absolute left-6 top-6 hidden text-[11px] leading-4 text-emerald-300/35 xl:block">
         {`$ init event_console
 $ loading protocol: ggsel/casher
@@ -132,7 +131,7 @@ $ bloom: low
 $ chroma: 0.12`}
       </pre>
       <aside
-        className={`fixed left-0 top-[40%] z-30 w-[240px] -translate-y-1/2 border border-emerald-300/35 bg-[#040808]/95 p-3 backdrop-blur-sm transition-all duration-500 ease-out ${
+        className={`fixed left-0 top-[40%] z-30 w-[240px] -translate-y-1/2 border border-emerald-300/35 bg-[#040808]/95 p-3 transition-all duration-500 ease-out ${
           showSiteShelf
             ? "translate-x-0 opacity-100 shadow-[0_0_24px_rgba(111,255,184,0.18)]"
             : "-translate-x-[238px] opacity-95 hover:translate-x-0"
