@@ -27,7 +27,7 @@ export default function BootOverlay() {
 
   return (
     <div
-      className={`fixed inset-0 z-[100] flex items-center justify-center bg-[#020606] transition-opacity duration-500 ${
+      className={`pointer-events-none fixed inset-0 z-[100] flex items-center justify-center bg-[#020606] boot-overlay-auto-hide transition-opacity duration-500 ${
         isFadingOut ? "opacity-0" : "opacity-100"
       }`}
     >

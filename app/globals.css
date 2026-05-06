@@ -96,6 +96,25 @@ body {
   animation: console-loader 0.9s steps(2, end) 0.48s infinite;
 }
 
+.boot-overlay-auto-hide {
+  animation: boot-overlay-fallback-hide 2.15s ease forwards;
+}
+
+@keyframes boot-overlay-fallback-hide {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  82% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 @keyframes console-loader {
   0%,
   100% {

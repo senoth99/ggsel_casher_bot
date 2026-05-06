@@ -132,10 +132,10 @@ $ bloom: low
 $ chroma: 0.12`}
       </pre>
       <aside
-        className={`fixed left-0 top-[40%] z-30 w-[240px] -translate-y-1/2 border border-emerald-300/35 bg-[#040808]/95 p-3 backdrop-blur-sm transition-all duration-200 ${
+        className={`fixed left-0 top-[40%] z-30 w-[240px] -translate-y-1/2 border border-emerald-300/35 bg-[#040808]/95 p-3 backdrop-blur-sm transition-all duration-500 ease-out ${
           showSiteShelf
             ? "translate-x-0 opacity-100 shadow-[0_0_24px_rgba(111,255,184,0.18)]"
-            : "-translate-x-[240px] opacity-100 hover:translate-x-0"
+            : "-translate-x-[238px] opacity-95 hover:translate-x-0"
         }`}
       >
         <div className="pointer-events-none absolute right-0 top-1/2 flex -translate-y-1/2 translate-x-full items-center">
