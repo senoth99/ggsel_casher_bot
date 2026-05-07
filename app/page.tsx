@@ -188,14 +188,24 @@ $ chroma: 0.12`}
         </div>
 
         <div className="mb-6 flex flex-col items-center gap-3 border border-emerald-300/25 bg-[#050b0b] px-4 py-5">
-          <div className="logo-float opacity-85">
-            <Image
-              src="/logo.png"
-              alt="CASHER x GGSEL logo"
-              width={84}
-              height={84}
-              unoptimized
-              priority
+          <div className="flex items-center justify-center gap-3">
+            <div className="logo-float opacity-85">
+              <Image
+                src="/logo.png"
+                alt="CASHER x GGSEL logo"
+                width={84}
+                height={84}
+                unoptimized
+                priority
+              />
+            </div>
+            <video
+              src="/ggsel.gif.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="soft-float-delayed h-[84px] w-[84px] object-contain opacity-85"
             />
           </div>
           <h1 className="text-center text-2xl font-bold tracking-wide text-emerald-300 sm:text-3xl">
